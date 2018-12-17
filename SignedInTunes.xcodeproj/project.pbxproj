@@ -8,22 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		3FD5F7A521C7F18600024B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F7A421C7F18600024B5F /* AppDelegate.swift */; };
-		3FD5F7A721C7F18600024B5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F7A621C7F18600024B5F /* ViewController.swift */; };
+		3FD5F7A721C7F18600024B5F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F7A621C7F18600024B5F /* SignInViewController.swift */; };
 		3FD5F7AA21C7F18600024B5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD5F7A821C7F18600024B5F /* Main.storyboard */; };
 		3FD5F7AD21C7F18600024B5F /* SignedInTunes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F7AB21C7F18600024B5F /* SignedInTunes.xcdatamodeld */; };
 		3FD5F7AF21C7F18700024B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD5F7AE21C7F18700024B5F /* Assets.xcassets */; };
 		3FD5F7B221C7F18700024B5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD5F7B021C7F18700024B5F /* LaunchScreen.storyboard */; };
+		3FD5F7BF21C7F3F200024B5F /* MusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F7BE21C7F3F200024B5F /* MusicTableViewController.m */; };
+		3FD5F7C321C7F5CA00024B5F /* WebserviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F7C221C7F5CA00024B5F /* WebserviceManager.m */; };
+		3FD5F7C921C7F9F600024B5F /* Album+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F7C521C7F9F600024B5F /* Album+CoreDataClass.swift */; };
+		3FD5F7CA21C7F9F600024B5F /* Album+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F7C621C7F9F600024B5F /* Album+CoreDataProperties.swift */; };
+		3FD5F7CB21C7F9F600024B5F /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F7C721C7F9F600024B5F /* User+CoreDataClass.swift */; };
+		3FD5F7CC21C7F9F600024B5F /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F7C821C7F9F600024B5F /* User+CoreDataProperties.swift */; };
+		3FD5F7CF21C8022E00024B5F /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F7CE21C8022E00024B5F /* CoreDataManager.m */; };
+		3FD5F7F721C80D6A00024B5F /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F7F621C80D6A00024B5F /* MusicViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FD5F7A121C7F18600024B5F /* SignedInTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignedInTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD5F7A421C7F18600024B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FD5F7A621C7F18600024B5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FD5F7A621C7F18600024B5F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3FD5F7A921C7F18600024B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FD5F7AC21C7F18600024B5F /* SignedInTunes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SignedInTunes.xcdatamodel; sourceTree = "<group>"; };
 		3FD5F7AE21C7F18700024B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD5F7B121C7F18700024B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FD5F7B321C7F18700024B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD5F7BC21C7F3F200024B5F /* SignedInTunes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignedInTunes-Bridging-Header.h"; sourceTree = "<group>"; };
+		3FD5F7BD21C7F3F200024B5F /* MusicTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicTableViewController.h; sourceTree = "<group>"; };
+		3FD5F7BE21C7F3F200024B5F /* MusicTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicTableViewController.m; sourceTree = "<group>"; };
+		3FD5F7C121C7F5CA00024B5F /* WebserviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebserviceManager.h; sourceTree = "<group>"; };
+		3FD5F7C221C7F5CA00024B5F /* WebserviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebserviceManager.m; sourceTree = "<group>"; };
+		3FD5F7C521C7F9F600024B5F /* Album+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3FD5F7C621C7F9F600024B5F /* Album+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FD5F7C721C7F9F600024B5F /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3FD5F7C821C7F9F600024B5F /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FD5F7CD21C8022E00024B5F /* CoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		3FD5F7CE21C8022E00024B5F /* CoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		3FD5F7F621C80D6A00024B5F /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +76,12 @@
 		3FD5F7A321C7F18600024B5F /* SignedInTunes */ = {
 			isa = PBXGroup;
 			children = (
+				3FD5F7F521C80D3000024B5F /* ViewModel */,
+				3FD5F7C421C7F9E200024B5F /* Model */,
+				3FD5F7C021C7F5AC00024B5F /* Manager */,
+				3FD5F7B921C7F34C00024B5F /* ViewController */,
 				3FD5F7A421C7F18600024B5F /* AppDelegate.swift */,
-				3FD5F7A621C7F18600024B5F /* ViewController.swift */,
+				3FD5F7BC21C7F3F200024B5F /* SignedInTunes-Bridging-Header.h */,
 				3FD5F7A821C7F18600024B5F /* Main.storyboard */,
 				3FD5F7AE21C7F18700024B5F /* Assets.xcassets */,
 				3FD5F7B021C7F18700024B5F /* LaunchScreen.storyboard */,
@@ -65,6 +89,46 @@
 				3FD5F7AB21C7F18600024B5F /* SignedInTunes.xcdatamodeld */,
 			);
 			path = SignedInTunes;
+			sourceTree = "<group>";
+		};
+		3FD5F7B921C7F34C00024B5F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3FD5F7A621C7F18600024B5F /* SignInViewController.swift */,
+				3FD5F7BD21C7F3F200024B5F /* MusicTableViewController.h */,
+				3FD5F7BE21C7F3F200024B5F /* MusicTableViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3FD5F7C021C7F5AC00024B5F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3FD5F7C121C7F5CA00024B5F /* WebserviceManager.h */,
+				3FD5F7C221C7F5CA00024B5F /* WebserviceManager.m */,
+				3FD5F7CD21C8022E00024B5F /* CoreDataManager.h */,
+				3FD5F7CE21C8022E00024B5F /* CoreDataManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3FD5F7C421C7F9E200024B5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FD5F7C521C7F9F600024B5F /* Album+CoreDataClass.swift */,
+				3FD5F7C621C7F9F600024B5F /* Album+CoreDataProperties.swift */,
+				3FD5F7C721C7F9F600024B5F /* User+CoreDataClass.swift */,
+				3FD5F7C821C7F9F600024B5F /* User+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FD5F7F521C80D3000024B5F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3FD5F7F621C80D6A00024B5F /* MusicViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +163,7 @@
 				TargetAttributes = {
 					3FD5F7A021C7F18600024B5F = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -139,8 +204,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD5F7AD21C7F18600024B5F /* SignedInTunes.xcdatamodeld in Sources */,
-				3FD5F7A721C7F18600024B5F /* ViewController.swift in Sources */,
+				3FD5F7BF21C7F3F200024B5F /* MusicTableViewController.m in Sources */,
+				3FD5F7CF21C8022E00024B5F /* CoreDataManager.m in Sources */,
+				3FD5F7A721C7F18600024B5F /* SignInViewController.swift in Sources */,
 				3FD5F7A521C7F18600024B5F /* AppDelegate.swift in Sources */,
+				3FD5F7C321C7F5CA00024B5F /* WebserviceManager.m in Sources */,
+				3FD5F7CA21C7F9F600024B5F /* Album+CoreDataProperties.swift in Sources */,
+				3FD5F7CB21C7F9F600024B5F /* User+CoreDataClass.swift in Sources */,
+				3FD5F7C921C7F9F600024B5F /* Album+CoreDataClass.swift in Sources */,
+				3FD5F7F721C80D6A00024B5F /* MusicViewModel.swift in Sources */,
+				3FD5F7CC21C7F9F600024B5F /* User+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SignedInTunes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,6 +368,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KevinYu.SignedInTunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SignedInTunes/SignedInTunes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SignedInTunes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +388,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KevinYu.SignedInTunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SignedInTunes/SignedInTunes-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
