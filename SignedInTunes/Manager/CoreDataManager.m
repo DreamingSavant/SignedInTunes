@@ -7,7 +7,6 @@
 //
 
 #import "CoreDataManager.h"
-#import <CoreData/CoreData.h>
 
 @interface CoreDataManager ()
 

@@ -3,3 +3,5 @@
 //
 
 #import "MusicTableViewController.h"
+#import "WebserviceManager.h"
+#import "CoreDataManager.h"

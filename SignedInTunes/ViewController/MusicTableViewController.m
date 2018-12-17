@@ -7,23 +7,18 @@
 //
 
 #import "MusicTableViewController.h"
-#import "WebserviceManager.h"
 #import "SignedInTunes-Swift.h"
 
+@class MusicViewModel;
 
 // class extension
 // not to be confused for Swift's extensions
 // nameless category
 @interface MusicTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
-
-
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
-@property (strong, nonatomic) NSMutableArray<Album *> *albums;
-
-
-
+@property (strong, nonatomic) MusicViewModel* viewModel;
 
 @end
 
@@ -35,8 +30,12 @@ static NSString *cellIdentifier = @"basicCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupTableView];
-    [[WebserviceManager sharedInstance] getAlbums:^(NSArray<Album *> *albums) {
-        self.albums = [albums mutableCopy];
+    [self setupViewModel];
+}
+
+- (void)setupViewModel {
+    self.viewModel = [[MusicViewModel alloc] init];
+    [self.viewModel getAlbums:^{
         [self.tableView reloadData];
     }];
 }
@@ -59,19 +58,19 @@ static NSString *cellIdentifier = @"basicCell";
     if (section == 0) {
         return 0;
     }
-    return self.albums.count;
+    return self.viewModel.numberOfAlbums;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     // customization of cell
-    cell.textLabel.text = self.albums[indexPath.row].albumName;
+    cell.textLabel.text = [self.viewModel titleForAlbum:indexPath.row];
     
     // who does the downloading?
     // VC?
     // this method?
-    // 
+    //
     // cell.imageView.image = self.albums[indexPath.row].albumImage
     cell.textLabel.numberOfLines = 0;
     NSLog(@"Will show cell: %li", (long)indexPath.row);

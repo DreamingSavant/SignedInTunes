@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SignedInTunes-Swift.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,8 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (WebserviceManager *)sharedInstance;
 
-
-- (void)getAlbums:(void (^)(NSArray<Album *> *))completion;
+- (void)getAlbums:(void (^)(NSDictionary *))completion;
 
 @end
 
